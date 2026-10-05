@@ -1,5 +1,5 @@
 // Archivo CSV a consultar (debe estar en la misma carpeta que index.html)
-const ARCHIVO_CSV = "becas.csv";
+const ARCHIVO_CSV = "Becas.csv";
 
 const cuerpo = document.getElementById("cuerpo");
 const buscar = document.getElementById("buscar");
