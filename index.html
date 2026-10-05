@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulta de becas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Consulta de becas Limitada economía</h1>
+      <p>Busca por nombre o ID. Toca un registro para ver su historial.</p>
+    </header>
+
+    <main>
+      <div class="tabla-wrap matriz-wrap">
+        <table class="matriz">
+          <tbody>
+            <tr>
+              <td>BECAS TOTALES:</td>
+              <td>1811</td>
+            </tr>
+            <tr>
+              <td>PENDIENTE</td>
+              <td>1811</td>
+            </tr>
+            <tr>
+              <td>VALIDADO</td>
+              <td>279</td>
+            </tr>
+            <tr>
+              <td>OBSERVADO</td>
+              <td>118</td>
+            </tr>
+            <tr>
+              <td>PAGADO</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tools">
+        <input
+          id="buscar"
+          type="search"
+          placeholder="Buscar por nombre o ID"
+          autocomplete="off"
+        />
+        <!--span id="contador" aria-live="polite"></span-->
+      </div>
+
+      <div class="tabla-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <!--th>Tipo de beca</th-->
+              <!--th>Estado</th-->
+              <th>Creación</th>
+              <!--th>Actualización</th-->
+            </tr>
+          </thead>
+          <tbody id="cuerpo"></tbody>
+        </table>
+      </div>
+
+      <p id="mensaje" class="mensaje" hidden></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
